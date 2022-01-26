@@ -24,7 +24,7 @@ public class Installer
             if (args.Length >= 2) projectName = args[1];
             if (args.Length >= 3) projectVersion = args[2];
             if (args.Length >= 4) outputInstaller = args[3];
-            projectVersion = BuildMsiBundle(bundleFolder, projectName, projectVersion, outputInstaller, guid);
+            BuildMsiBundle(bundleFolder, projectName, projectVersion, outputInstaller, guid);
         }
         else
         {
